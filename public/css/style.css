@@ -159,16 +159,16 @@ overflow-wrap: break-word;
 
 /* Contact section  */
 
-/* #contactus{
-    background-image: url(/imgs/contacts.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    height: 900px;
-    
-  
-  position: relative;
-} */
+/* height="500px" width="375px" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); margin-top: 180px; z-index: -1; */
+
+.contactimg img{
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 500px;
+    z-index: -1;
+}
 
 #contactid {
     padding-top: 200px;
@@ -355,6 +355,15 @@ footer p {
 @media (max-width: 560px) {
     /* home section  */
     
+    .contactimg img{
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 500px;
+        z-index: -1;
+    }
+    
     .containers {
         padding: 3% 8%;
       
@@ -383,7 +392,7 @@ footer p {
     
     /* contactus section  */
   
-
+    
     .contact-text h2:nth-child(1){
         font-size: 30px;
         padding: 0;
