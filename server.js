@@ -13,8 +13,8 @@ app.use(bodyParser.urlencoded({extended:true}))
 app.set('view engine', 'ejs')
 
 
-// mongoose section 
-
+// mongoose section
+// mongodb+srv://hemaelmoaagza:hema1909tato@blogsite.v3sd5jo.mongodb.net/blogDB
 const Schema = mongoose.Schema;
 const mongouri= "mongodb+srv://hemaelmoaagza:hema1909tato@blogsite.v3sd5jo.mongodb.net/blogDB";
 

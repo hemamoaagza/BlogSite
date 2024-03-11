@@ -26,6 +26,9 @@ body{
 
 /* NAVBAR SECTION  */
 
+
+  /* containers nav  */
+
 .navbars .containers span a {
     margin: 0;
     text-decoration: none;
@@ -272,114 +275,8 @@ footer p {
     background-color: #6c6b6b;
 }
 
+/* signup page */
 
-@media (max-width: 560px) {
-    /* home section  */
-    
-    .containers {
-        max-width: 400px;
-      
-    }
-
-    .forms p {
-        font-size: 15px;
-    }
-    .forms h1{
-        font-size: 30px;
-    }
-
-
-    /* navbar section  */
-
-    
-    .navbars .containers {
-        width: 375px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 22px;
-    }
-    .navbars .containers ul a{
-        letter-spacing: 1px;
-    }
-    .navbars .containers ul {
-        text-align: center;
-        padding: 0;
-        display: flex;
-        gap: 21px;
-        /* flex-wrap: wrap; */
-        list-style: none;  
-    }
-
-
-    /* compose section  */
-
-    .containers .compose textarea {
-        width: 100%;
-    }
-    .containers .compose input:nth-child(2){
-    
-        width: 100%;
-    }
-    .composebtn{
-        padding-bottom: 60px;
-    }
-    
-    /* contactus section  */
-  
-
-    .contact-text h2:nth-child(1){
-        font-size: 30px;
-        padding: 0;
-    }
-    .contact-text h2:nth-child(2){
-        padding: 0;
-        font-size: 30px;
-    }
-    .contact-text p {
-       padding: 32px;
-       margin-bottom: 140px;
-        
-    }
-    .contact-text  {
-       text-align: center;
-    }
-    
-    /* aboutus section  */
-    
-    .about .containers h1{
-        font-size: 22px;
-    }
-    .about p{
-        font-size: 13px;
-    }
-    .iconsContent {
-        display: grid;
-        grid-template-columns: repeat(auto-fill , minmax(300px ,1fr));
-    }
-    .icons {
-        padding: 0;
-    }
-    .iconsContent img {
-        padding: 0;
-    }
-  }
-
-  /* @media (min-width: 992px) {
-    .containers {
-      
-    }
-  }
-  @media (min-width: 1200px) {
-    .containers {
-      
-    }
-  } */
-
-
-
-  /* signup page */
 .bkimg{
     background-image: url(/imgs/background.png);
     filter: blur(8px);
@@ -413,33 +310,34 @@ footer p {
 
 }
 .theform{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .form-signin {
-  max-width: 330px;
-  padding: 1rem;
+    max-width: 330px;
+    padding: 1rem;
 }
 
 .form-signin .form-floating:focus-within {
-  z-index: 2;
+    z-index: 2;
 }
 
 .top {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-  
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
 }
 .mid {
     border-radius: 0;
 }
 .bottom{
-  
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
 }
 
 .btns{
@@ -450,3 +348,165 @@ footer p {
     text-align: center;
 }
 
+
+
+
+
+@media (max-width: 560px) {
+    /* home section  */
+    
+    .containers {
+        padding: 3% 8%;
+      
+    }
+
+    .forms p {
+        font-size: 15px;
+    }
+    .forms h1{
+        font-size: 30px;
+    }
+
+
+    /* compose section  */
+
+    .containers .compose textarea {
+        width: 100%;
+    }
+    .containers .compose input:nth-child(2){
+    
+        width: 100%;
+    }
+    .composebtn{
+        padding-bottom: 60px;
+    }
+    
+    /* contactus section  */
+  
+
+    .contact-text h2:nth-child(1){
+        font-size: 30px;
+        padding: 0;
+    }
+    .contact-text h2:nth-child(2){
+        padding: 0;
+        font-size: 30px;
+    }
+    .contact-text p {
+        padding: 32px;
+        margin-bottom: 140px;
+        
+    }
+    .contact-text  {
+        text-align: center;
+    }
+    
+    /* aboutus section  */
+    
+    .about .containers h1{
+        font-size: 22px;
+    }
+    .about p{
+        font-size: 13px;
+    }
+    .iconsContent {
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(300px ,1fr));
+    }
+    .icons {
+        padding: 0;
+    }
+    .iconsContent img {
+        padding: 0;
+    }
+
+    .footermain p {
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+/* NAVBAR Media Query  */
+
+
+@media (max-width: 767px) {
+    .navbars .containers ul{
+        display: none;
+    }
+    .icon {
+    width: 25px;
+    align-self: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    z-index: 1;
+    display: block;
+    transition: 0.3s;
+    
+    }
+    .icon span {
+    height: 2px;
+    background-color: #0b0b0b;
+    display: block;
+    margin-bottom: 6px;
+    }
+
+    .icon span:nth-child(2) {
+    width: 60%;
+    transition: 0.3s;
+    }
+
+    .icon span:nth-child(1),
+    span:nth-child(3) {
+    width: 100%;
+    }
+
+    .icon:hover span:nth-child(2) {
+    width: 100%;
+    }
+    .links{
+        position: relative;
+    }
+    .links ul {
+    min-width: 200px;
+    min-height: 200px;
+    padding: 0px;
+    text-align: left;
+    list-style: none;
+    right: 10px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: #e0e0e0;
+    top: 40px;
+    box-shadow: 1px 1px 1px 2px rgb(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+    }
+
+
+    .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #e2e2e2dc transparent;
+    position: absolute;
+    right: 6px;
+    top: -19px;
+    }
+
+    .links ul li {
+    margin: 10px 10px;
+    border-bottom: 1px solid #0e0d0dbe;
+    }
+    .links:hover ul {
+    display: block;
+    }
+    .links ul li a:hover {
+    padding-left: 25px;
+    color: #020202;
+    font-weight: 900;
+    }
+}
