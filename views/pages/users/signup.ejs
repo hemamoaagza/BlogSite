@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head >
+<body style=" background: rgb(43,103,133);
+background: radial-gradient(circle, rgba(43,103,133,0.9934348739495799) 68%, rgba(2,79,116,1) 93%);
+;">
+   <section class=" min-h-screen flex items-center justify-center ">
+    <!-- login container -->
+    <div class="bg-[#C1C5C7] flex rounded-2xl shadow-lg max-w-4xl p-5 items-center">
+
+    
+    <!-- img -->
+        <div class="md:block hidden w-1/2 ">
+        <img class="rounded-2xl " src="/imgs/2.webp" alt="">
+        </div>
+        <!-- form -->
+    <div class="md:w-1/2 px-16 mt-11">
+        <h1 class="md:text-4xl font-bold text-3xl  text-[#4685a4] hover:text-[#7e8081] hover:scale-105 duration-500 cursor-pointer ">SignUp</h1>
+        <p class="text-xm mt-4">If you are a new member, please fill the form </p>
+        <form action="/signup" method="post" class="flex flex-col gap-4">
+
+            <input class="p-2 mt-8 rounded-xl border" type="text" placeholder="Username" name="US" id="">
+            <div class="relative">
+                <input class="p-2 rounded-xl border w-full" type="password" placeholder="Password" name="PS" id="passcl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray" id="passim" class="bi bi-eye absolute top-1/2 right-3 -translate-y-1/2 hover:scale-105 duration-300 cursor-pointer" viewBox="0 0 16 16">
+                    <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                    <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                  </svg>
+            </div>
+            <input class="p-2 rounded-xl border w-full" type="email" placeholder="Email address" name="EM" >
+           
+            <button class="bg-[#4685a4] rounded-xl text-white font-bold py-2 hover:scale-105 duration-300" type="submit"> Sign up</button>
+
+        </form >
+
+        <div class="mt-10 grid grid-cols-3 items-center text-gray-500">
+        <hr class="border-gray-400">
+        <p class="text-center">OR</p>
+        <hr class="border-gray-400">
+        
+        </div>
+
+
+        <div class="mt-5 text-sm flex justify-between items-center">
+            <p>If you already have an account please login..</p>
+            <button class="py-2 px-5 bg-white  rounded-xl hover:scale-110 duration-300 hover:bg-[#4685a4] hover:text-white"><a style="text-decoration: none; " href="/">Login</a></button>
+        </div>
+        </div>
+    </div>
+    
+    
+   </section>
+
+   <script>
+    let eyeicon =document.getElementById("passcl")
+    let passcll =document.getElementById("passim")
+
+    passcll.onclick= function(){
+        if(eyeicon.type =="password"){
+            eyeicon.type ="text"
+        }else {
+            eyeicon.type="password"
+        }
+        
+    }
+   </script>
+   <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<%- include("../common/header") -%>
+    
+
+        <!-- home  -->
+        <div class="content">
+            <div class="containers">
+                <div class="forms">
+                    <h1>Home</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veritatis voluptate voluptatum, sapiente ut nostrum saepe officia tempora facere consequatur magni ipsa dolorum esse corrupti. Fugit magni officiis soluta eius-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad veritatis voluptate voluptatum, sapiente ut nostrum saepe officia tempora facere consequatur magni ipsa dolorum esse corrupti. Fugit magni officiis soluta eius.</p>
+                    
+                    
+        <!-- a javascript code that handle the home page  -->
+<% posts.forEach(function(post){ %>
+<%var mycontent = post.content;%>
+        <form action="/delete" method="post">
+        <h1><%= post.title %><button type="submit" style=" background: none; padding: 0px; border: none;" value="<%= post._id %>" name="button">
+        <i class="fa-regular fa-trash-can" style="color: rgb(111, 111, 110); 
+                         padding-left: 20px; font-size: 20px; cursor: pointer;" ></i>
+            </button></h1>
+        <!-- an if statement that handle the length of the content -->
+<%  if (mycontent.length > 100){%>
+    <p><%= mycontent.substring(0, 120) + "........" %> <a style="text-decoration: none;
+    color: rgb(16, 117, 154); font-weight: 700; font-size: 16px;" href="/posts/<%= post.title %>">ShowMore</a></p> 
+                
+<%  } else { %> 
+    <p><%= mycontent.substring(0, 120)  %></p>
+    <% } %> 
+<%  }); %>
+                            
+            </form>   
+
+                    
+                </div>
+            
+        </div>
+
+        <%- include("../common/footer") -%>
