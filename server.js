@@ -16,7 +16,7 @@ app.set('view engine', 'ejs')
 // mongoose section 
 
 const Schema = mongoose.Schema;
-const mongouri= "mongodb://localhost:27018/blogDB";
+const mongouri= "mongodb+srv://hemaelmoaagza:hema1909tato@blogsite.v3sd5jo.mongodb.net/blogDB";
 
 mongoose.connect(mongouri).then((res)=>{
     console.log("mongodDB Connected")
